@@ -1,0 +1,72 @@
+/* NavBar.css */
+/* Common styles for all screen sizes*/
+.navbar {
+    background-color: #90e0ef;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    border-bottom: 2px solid gray;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: #F2D5CE;
+    color: black;
+  }
+
+.user-style{
+  font-weight: bold;
+  color: brown;
+  background-color: peachpuff;
+  position: absolute;
+  right: 30px;
+  width: 300px;
+  border: 3px solid whitesmoke;
+  padding: 10px;
+  
+}
+
+.avatar {
+  width: 30px; /* Adjust the size of the avatar image as needed */
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  right: 260px;
+}
+
+/* Hide icons on larger screens */
+@media screen and (min-width: 768px) {
+  .nav-icon {
+      display: none;
+  }
+}
+
+/* Display icons for mobile devices */
+@media screen and (max-width: 767px) {
+  .nav-text {
+      display: none;
+  }
+}
+
